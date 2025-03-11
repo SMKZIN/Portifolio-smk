@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
@@ -17,24 +17,28 @@
                     <img class="img-header" src="/img/29146056-smk-carta-logotipo-projeto-inspiracao-para-uma-unico-identidade-moderno-elegancia-e-criativo-projeto-marca-d-agua-seu-sucesso-com-a-impressionante-isto-logotipo-vetor.jpg" alt="">
                 </div>
                 <div class="infos-header"> 
-                    <span>Contato</span>
-                    <span>Sobre</span>
-                    <span>Tecnologias</span>
-                    <span>Pojetos</span>
+                    <a href="#Contato">Contato</a>
+                    <a href="#Sobre">Sobre</@>
+                    <a href="#Tecnologias">Tecnologias</a>
+                    <a href="#Projetos">Pojetos</a>
                 </div>
             </div>
         </header>
 
-        <span class="fontTitle">Sobre mim</span>
+        <h2 id="Sobre" class="fontTitle">
+            <span  class="bolinha"></span> Sobre Mim :
+        </h2>
 
         <section class="sobreMim">
             <div class="apresentacao">
                 <span class="titleSobreMim">Olá, meu nome é Samuel Davi !</span>
-                <span class="SobreMimDesc">Sou desenvolvedor formado pela Cubos Academy em desenvolvimento Full Stack Web e graduando em Matemática na UFMG. Tenho foco no desenvolvimento Back-end, criando APIs REST robustas e escaláveis com Node.js, TypeScript, Express.js, NestJS, Docker e PostgreSQL. Também possuo experiência com testes automatizados (Jest) e boas práticas de arquitetura. Gosto de resolver problemas complexos e otimizar processos, sempre buscando aprimorar minhas habilidades e escrever código limpo e eficiente.</span>
+                <span class="SobreMimDesc">Sou desenvolvedor formado pela Cubos Academy em desenvolvimento Full Stack Web e graduando em Matemática na UFMG. Tenho foco no desenvolvimento Back-end, criando APIs REST robustas e escaláveis com Node.js, TypeScript, Express.js, NestJS, Prisma ORM Docker e PostgreSQL. Também possuo experiência com testes automatizados (Jest) e boas práticas de arquitetura. Gosto de resolver problemas complexos e otimizar processos, sempre buscando aprimorar minhas habilidades e escrever código limpo e eficiente.</span>
             </div>
         </section>
 
-        <span class="fontTitle">Tecnologias</span>
+        <h2 id="Tecnologias" class="fontTitle">
+            <span class="bolinha"></span>Tecnologias :
+        </h2>
 
         <section class="tecnologias">
             <div class="tecnologiasDiv">
@@ -55,13 +59,15 @@
             </div>
         </section>
 
-        <span class="fontTitle">Projetos</span>
+        <h2 id="Projetos"  class="fontTitle">
+            <span class="bolinha"></span> Projetos :
+        </h2>
 
-        <section class="projetos">
+        <section  class="projetos">
             <div class="containerProjetos">
                 <div class="divisaoProjeto">
                     <img class="imagemProjetos" src="/img/resolucoes-de-ano-novo-natureza-morta_23-2149894174.avif" alt="">
-                    <span class="SobreProjeto">O Resume API é uma API projetada para ajudar estudantes a organizar e revisar seus resumos de maneira eficiente. A plataforma permite que os alunos criem, editem e organizem resumos de diferentes matérias, tudo de forma prática e segura. Com funcionalidades como cadastro de usuários, login seguro e filtragem de resumos por matéria, o Resume AI facilita o acesso à informação e otimiza o processo de estudo.</span>
+                    <span class="SobreProjeto">O Resume API é uma API projetada para ajudar estudantes a organizar e revisar seus resumos de maneira eficiente. A plataforma permite que os alunos criem, editem e organizem resumos de diferentes matérias, tudo de forma prática e segura. Com funcionalidades como cadastro de usuários, login seguro e filtragem de resumos por matéria, o Resume API facilita o acesso à informação e otimiza o processo de estudo.</span>
                 </div>
                 <div class="linkProjeto">
                     <a class="textoLink" href="https://github.com/SMKZIN/API-REST-RESUMOS">Veja o projeto completo aqui</a>
@@ -78,19 +84,23 @@
             </div>
         </section>
 
-        <footer>
-            <span class="contatoFoot">Contato :</span>
+        <footer id="Contato">
+            <h2 class="contatoFoot">Contato :</h2>
             <div class="divisaoInfos">
                 <span class="whitecolor">github :</span>
                 <a href="https://github.com/SMKZIN">https://github.com/SMKZIN</a>
             </div>
-            <div>
+            <div class="divisaoInfos">
                 <span class="whitecolor">Email :</span>
-                <a href="Samueldavi6306@gmail.com">samueldavi6306@gmail.com</a>
+                <a href="mailto:samueldavi6306@gmail.com">samueldavi6306@gmail.com</a>
             </div>
-            <div>
+            <div class="divisaoInfos">
                 <span class="whitecolor">Telefone :</span>
                 <span>31 992621091</span>
+            </div>
+            <div class="divisaoInfos">
+                <span class="whitecolor">Linkedin :</span>
+                <a href="https://www.linkedin.com/in/samuel-dvi-6b3b23232/">https://www.linkedin.com/in/samuel-dvi-6b3b23232/</a>
             </div>
         </footer>
     </main>
