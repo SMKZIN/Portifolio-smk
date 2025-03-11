@@ -151,8 +151,37 @@ header {
     gap: 12px;
 }
 
-.linkProjeto{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.linkProjeto {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2A3D66;
+    color: white;
+    text-decoration: none; 
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.linkProjeto:hover {
+    background-color: #E85D3C; 
+    transform: scale(1.05); 
+}
+
+.linkProjeto:active {
+    background-color: #D44E29; 
+    transform: scale(1); 
+}
+
+.linkProjeto:focus {
+    outline: none; 
+    text-decoration: none; 
+}
+
+.textoLink{
+    text-decoration: none;
+    color: #F37D3A;
+    cursor: pointer;
 }
