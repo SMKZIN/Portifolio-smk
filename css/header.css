@@ -85,3 +85,25 @@ header{
     line-height: 40px;
     color: #333333;
 }
+
+.tecnologias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #C0C0C0;
+    width: 70%;
+    height: 100%;
+    border-radius: 30px;
+    box-shadow: 0px 0px 2px 2px #292727;
+}
+
+.tecnologiasDiv{
+    display: flex;
+    gap: 30px;
+    margin: 20px;
+}
+
+.imgTecs{
+    width: 100px;
+}
