@@ -319,8 +319,7 @@ footer div {
 }
 
 .fontTitle::before {
-   
-button:focus {
+    button:focus {
     outline: none;
     box-shadow: none;
 }
@@ -366,6 +365,75 @@ button:focus {
     font-size: 30px;
     margin-right: 8px;
 }
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #2A3D66;
+    color: white;
+    padding: 20px;
+    border-top: 3px solid #F37D3A;
+    font-family: "Outfit", sans-serif;
+    text-align: center;
+    border-radius: 15px 15px 0 0;
+    margin-top: 40px;
+    width: 100%;
+    gap: 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    font-size: 18px; 
+}
+
+footer a:hover {
+    color: #F37D3A;
+}
+
+footer .linkedin-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+footer .linkedin-icon:hover {
+    transform: scale(1.2);
+}
+
+footer div {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    footer a {
+        font-size: 16px; 
+        flex-direction: column;
+    }
+
+    footer .linkedin-icon {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    footer a {
+        font-size: 14px;
+    }
+
+    footer .linkedin-icon {
+        width: 20px;
+        height: 20px;
+    }
+}
+
 
 
 @media (max-width: 768px) {
