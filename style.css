@@ -175,35 +175,75 @@ section {
 }
 
 /* ================= PROJETOS ================= */
+/* Estilização do card do projeto */
 .proj-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
+  gap: 2rem;
+  padding: 2rem 0;
 }
 
 .card {
-  background: #161731;
-  padding: 25px;
-  border-radius: 20px;
-  box-shadow: 0 0 20px rgba(123, 92, 255, 0.1);
-  transition: 0.3s;
+  background-color: #1e1e2f; /* fundo escuro moderno */
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 0 25px rgba(123, 92, 255, 0.4);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
 }
 
+/* Miniatura do projeto */
+.proj-thumb {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.proj-thumb:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+/* Título do projeto */
 .card h3 {
-  color: #7b5cff;
-  margin-bottom: 10px;
+  margin: 0.5rem 0;
+  font-size: 1.25rem;
+  color: #fff;
 }
 
+/* Descrição */
 .card p {
-  font-size: 15px;
-  color: #cfd2ff;
-  margin-bottom: 15px;
+  color: #ccc;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  line-height: 1.4;
 }
+
+/* Botão */
+.card .btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: #4f46e5; /* roxo moderno */
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.card .btn:hover {
+  background-color: #6366f1;
+  transform: translateY(-2px);
+}
+
+
 
 /* ================= FOOTER ================= */
 footer {
