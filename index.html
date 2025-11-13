@@ -1,108 +1,74 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-    <title>Samuel Cruz - Portfólio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samuel | Desenvolvedor Back-End</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <header>
-            <div class="container-header"> 
-                <div class="container-img">
-                    <img class="img-header" src="/img/29146056-smk-carta-logotipo-projeto-inspiracao-para-uma-unico-identidade-moderno-elegancia-e-criativo-projeto-marca-d-agua-seu-sucesso-com-a-impressionante-isto-logotipo-vetor.jpg" alt="">
-                </div>
-                <div class="infos-header"> 
-                    <a href="#Contato">Contato</a>
-                    <a href="#Sobre">Sobre</@>
-                    <a href="#Tecnologias">Tecnologias</a>
-                    <a href="#Projetos">Pojetos</a>
-                </div>
-            </div>
-        </header>
+  <header>
+    <div class="container header-content">
+      <h1 class="logo">Samuel<span>.</span></h1>
+      <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#tecnologias">Tecnologias</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
 
-        <h2 id="Sobre" class="fontTitle">
-            <span  class="bolinha"></span> Sobre Mim :
-        </h2>
+  <section class="hero">
+    <div class="container hero-content">
+      <h2>Olá, eu sou <span>Samuel</span></h2>
+      <p>Desenvolvedor <strong>Back-End</strong> apaixonado por resolver problemas e construir aplicações que fazem a diferença.</p>
+      <a href="#projetos" class="btn">Ver meus projetos</a>
+    </div>
+  </section>
 
-        <section class="sobreMim">
-            <div class="apresentacao">
-                <span class="titleSobreMim">Olá, meu nome é Samuel Cruz!</span>
-                <span class="SobreMimDesc">Sou desenvolvedor formado pela Cubos Academy em desenvolvimento Full Stack Web e graduando em Matemática na UFMG. Tenho foco no desenvolvimento Back-end, criando APIs REST robustas e escaláveis com Node.js, TypeScript, Express.js, NestJS, Prisma ORM Docker e PostgreSQL. Também possuo experiência com testes automatizados (Jest) e boas práticas de arquitetura. Gosto de resolver problemas complexos e otimizar processos, sempre buscando aprimorar minhas habilidades e escrever código limpo e eficiente.</span>
-            </div>
-        </section>
+  <section id="sobre" class="sobre">
+    <h2 class="section-title">Sobre Mim</h2>
+    <p>Sou desenvolvedor back-end com experiência em Node.js, TypeScript, Express e PostgreSQL. Adoro transformar ideias em soluções escaláveis e seguras, e estou sempre buscando aprender novas tecnologias para evoluir profissionalmente.</p>
+  </section>
 
-        <h2 id="Tecnologias" class="fontTitle">
-            <span class="bolinha"></span>Tecnologias :
-        </h2>
+  <section id="tecnologias" class="tecnologias">
+    <h2 class="section-title">Tecnologias</h2>
+    <div class="tec-grid">
+      <div class="tec-item"><img src="./img/Nest.js.png"><span>NestJS</span></div>
+      <div class="tec-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"><span>Node.js</span></div>
+      <div class="tec-item"><img src="./img/17219288.png"><span>PrismaORM</span></div>
+      <div class="tec-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"><span>TypeScript</span></div>
+      <div class="tec-item"><img src="./img/Jest.png"><span>Jest</span></div>
+      <div class="tec-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"><span>Docker</span></div>
+      <div class="tec-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"><span>PostgreSQL</span></div>
+      <div class="tec-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"><span>Linux</span></div>
+    </div>
+  </section>
 
-        <section class="tecnologias">
-            <div class="tecnologiasDiv">
-                <img class="imgTecs" src="/img/logo-javascript.svg" alt="">
-                <img class="imgTecs" src="/img/nestjs-icon-2048x2038-6bjnpydw.png" alt="">
-                <img class="imgTecs" src="/img/icons8-nó-js.svg" alt="">
-                <img class="imgTecs" src="/img/typescript.svg" alt="">
-            </div>
-            <div class="tecnologiasDiv">
-                <img class="imgTecs" src="/img/icons8-docker.svg" alt="">
-                <img class="imgTecs" src="/img/icons8-postgres.svg" alt="">
-                <img class="imgTecs" src="/img/icons8-sql-90.png" alt="">
-                <img class="imgTecs" src="/img/icons8-jest-can-collect-code-coverage-information-from-entire-projects-96.png" alt="">
-            </div>
-            <div class="tecnologiasDiv">
-                <img class="imgTecs" src="/img/icons8-prisma-orma.svg" alt="">
-                <img class="imgTecs" src="/img/icons8-linux-96.png" alt="">
-            </div>
-        </section>
+  <section id="projetos" class="projetos">
+    <h2 class="section-title">Projetos</h2>
+    <div class="proj-grid">
+      <div class="card">
+        <h3>API de Comanda Online</h3>
+        <p>Sistema completo de gerenciamento de pedidos de bar, com autenticação JWT e integração PostgreSQL.</p>
+        <a href="#" class="btn">Ver Projeto</a>
+      </div>
+      <div class="card">
+        <h3>Portfólio Responsivo</h3>
+        <p>Portfólio desenvolvido em HTML, CSS e JS com foco em design limpo e animações suaves.</p>
+        <a href="#" class="btn">Ver Projeto</a>
+      </div>
+      <div class="card">
+        <h3>API de Login com NestJS</h3>
+        <p>API segura e testada com Jest, utilizando arquitetura modular e boas práticas de back-end.</p>
+        <a href="#" class="btn">Ver Projeto</a>
+      </div>
+    </div>
+  </section>
 
-        <h2 id="Projetos"  class="fontTitle">
-            <span class="bolinha"></span> Projetos :
-        </h2>
-
-        <section  class="projetos">
-            <div class="containerProjetos">
-                <div class="divisaoProjeto">
-                    <img class="imagemProjetos" src="/img/resolucoes-de-ano-novo-natureza-morta_23-2149894174.avif" alt="">
-                    <span class="SobreProjeto">O Resume API é uma API projetada para ajudar estudantes a organizar e revisar seus resumos de maneira eficiente. A plataforma permite que os alunos criem, editem e organizem resumos de diferentes matérias, tudo de forma prática e segura. Com funcionalidades como cadastro de usuários, login seguro e filtragem de resumos por matéria, o Resume API facilita o acesso à informação e otimiza o processo de estudo.</span>
-                </div>
-                <div class="linkProjeto">
-                    <a class="textoLink" href="https://github.com/SMKZIN/API-REST-RESUMOS">Veja o projeto completo aqui</a>
-                </div>
-            </div>
-            <div class="containerProjetos">
-                <div class="divisaoProjeto">
-                    <img class="imagemProjetos" src="/img/istockphoto-139786707-612x612.jpg" alt="">
-                    <span class="SobreProjeto">O Bookstore API é uma API backend desenvolvida para permitir que livrarias gerenciem seu estoque de livros de maneira eficiente e segura. A plataforma oferece funcionalidades completas para o gerenciamento de livros e usuários. Com funcionalidades como o registro de contas, login seguro com autenticação e criptografia de senhas, a API permite que os usuários criem, editem, excluam e busquem livros de forma simples e prática. O Bookstore API facilita o processo de gestão de livros e garante a segurança dos dados dos usuários.</span>
-                </div>
-                <div class="linkProjeto">
-                    <a class="textoLink" href="https://github.com/SMKZIN/API-Library">Veja o projeto completo aqui</a>
-                </div>
-            </div>
-        </section>
-
-        <footer id="Contato">
-            <h2 class="contatoFoot">Contato :</h2>
-            <div class="divisaoInfos">
-                <span class="whitecolor">github :</span>
-                <a href="https://github.com/SMKZIN">https://github.com/SMKZIN</a>
-            </div>
-            <div class="divisaoInfos">
-                <span class="whitecolor">Email :</span>
-                <a href="mailto:samueldavi6306@gmail.com">samueldavi6306@gmail.com</a>
-            </div>
-            <div class="divisaoInfos">
-                <span class="whitecolor">Telefone :</span>
-                <span>31 992621091</span>
-            </div>
-            <div class="divisaoInfos">
-                <span class="whitecolor">Linkedin :</span>
-                <a href="https://www.linkedin.com/in/samuel-dvi-6b3b23232/">https://www.linkedin.com/in/samuel-dvi-6b3b23232/</a>
-            </div>
-        </footer>
-    </main>
+  <footer id="contato">
+    <p>© 2025 Samuel | Feito com 💜 e JavaScript ⚡</p>
+  </footer>
 </body>
 </html>
